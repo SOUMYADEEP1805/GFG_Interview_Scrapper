@@ -116,6 +116,8 @@ isDirrectory(dirPath);
        companyLinks.push(fullLink);
     }
 
+    await page.waitForTimeout(3000);
+    
     // This will a screenshot of the page where the name of 156 companies
     // are displayed and saved in locally inside the current 
     // working Directory by the name of "GeeksforGeeks_Company_list.png" 
