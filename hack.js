@@ -86,7 +86,7 @@ isDirrectory(dirPath);
     let finalDropDownOptionArr =  await page.$$(".mega-dropdown .mega-dropdown__list-item a");
     await page.evaluate(function(element){
         element.click();
-    },finalDropDownOptionArr[43]); 
+    },finalDropDownOptionArr[185]); 
     console.log("Practice company questions clicked");
     console.log("--------------------");
 
@@ -136,7 +136,7 @@ isDirrectory(dirPath);
     // and open the companies question page in new tab and the scroll it down 
     // till the last question is not loaded successfully then it read data scrap it 
     // and store it inside excel file for each company present.
-    for(let i = 1; i < 4; i++){
+    for(let i = 1; i < 3; i++){
         await linkNavigator(companyLinks[i],i+1);
     }
     // await linkNavigator("https://practice.geeksforgeeks.org/company/Snapdeal/",1);
